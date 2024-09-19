@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room hai kya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlaCK0xnk05i1jRrDWN-WmlQCqK9qfxi0LhXv9ZG3dyruCombBeNXjuobCs229VMqoZQM&usqp=CAU');
+            background-repeat: no-repeat;
+            background-size: 130vw;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+            gap: 20px;
+            margin-top: 200px;
+        }
+        .box {
+            flex: 1;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 400px;
+            height: 500px;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.3s ease;
+        }
+        .box:active {
+            transform: scale(0.95); /* This creates a "pressed" effect */
+        }
+        .box h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .box p {
+            color: #666;
+        }
+        .box img {
+            width: 50%;
+            border-radius: 8px;
+            margin-left: 150px;
+        }
+        .tenant {
+            background-color: #e0f7fa;
+        }
+        .landlord {
+            background-color: #fff3e0;
+        }
+        p {
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="images/logo 7.png" width="200px" height="200px" style="margin-top: -180px;">
+         
+
+        <div class="box tenant" onclick="navigateTo('tenant')">
+            <h2>Tenant Information</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYOvUCIkB1sQJMWJMjpYx21A224KvlWRM7cw&s" alt="Tenant">
+            <p>If you are finding a room for rent, please click here for more information</p>
+        </div>
+        <div class="box landlord" onclick="navigateTo('landlord')">
+            <h2>Landlord Information</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSGH0oFuw8rpQbnMTSE3ovRnSuws7dr_98_Q&s" alt="Landlord">
+            <p>If you have a property for rent, please click here for more information</p>
+        </div>
+    </div>
+    <script>
+        function navigateTo(type) {
+            const delay = 300; // Duration of the "pressed" effect
+            if (type === 'tenant') {
+                setTimeout(() => {
+                    window.location.href = '/login.html'; // Redirect to tenant info page
+                }, delay);
+            } else if (type === 'landlord') {
+                setTimeout(() => {
+                    window.location.href = '/login2.html'; // Redirect to landlord info page
+                }, delay);
+            }
+        }
+    </script>
+</body>
+</html>

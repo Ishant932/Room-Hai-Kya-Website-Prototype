@@ -1,0 +1,160 @@
+body, h1, h2, h3, p, ul, li, form, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+header {
+    background: #e3daeb;
+    color: black;
+    padding: 10px 0;
+    position: relative;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #0b0c0d;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+header nav ul li a:hover {
+    color: #ff6347; /* Change color on hover */
+}
+
+#hero {
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20190221/ourmid/pngtree-d-buy-a-house-renting-a-house-look-at-the-house-image_18099.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#hero h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#hero p {
+    margin-bottom: 20px;
+}
+
+#hero form {
+    display: flex;
+    justify-content: center;
+}
+
+#hero input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+#hero button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background: #333;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+#hero button:hover {
+    background: #555;
+}
+
+#features {
+    padding: 40px 0;
+}
+
+#features .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#features h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.property {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.property img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+#property3 img{
+    width: 30%;
+}
+
+.property h3 {
+    margin: 10px 0;
+}
+
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+#sign-in-section {
+    display: none;
+    position: absolute;
+    top: 30px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000;
+}
+
+#sign-in-section h2 {
+    
+    color: #333;
+}

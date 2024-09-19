@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Details</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body, h1, h2, h3, p, ul, li, form, input, button {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background: #e3daeb;
+            color: black;
+            padding: 10px 0;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: #0b0c0d;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        #property-details {
+            padding: 40px 0;
+            background: #f9f9f9;
+        }
+
+        .property-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .property-info img {
+            max-width: 100%;
+            border-radius: 10px;
+            height: auto;
+        }
+
+        .property-details {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .property-details h2 {
+            margin-bottom: 10px;
+        }
+
+        .property-details p {
+            margin-bottom: 20px;
+        }
+
+        .reviews {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .review {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        .review h3 {
+            margin-bottom: 10px;
+        }
+
+        .review p {
+            margin-bottom: 5px;
+        }
+
+        .review .reviewer {
+            font-weight: bold;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        footer .footer-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        footer h4 {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images/logo page.png" alt="Rent Finder Logo" width="150px" height="150px">
+            <nav>
+                <ul>
+                    <li><a href="/home.html">Home</a></li>
+                    <li><a href="/property.html">Property Details</a></li>
+                    <li><a href="/service.html">Our Services</a></li>
+                    <li><a href="/contact.html">Contact Us</a></li>
+                    <li><a href="/complain.html">Complain</a></li>
+                    <li>
+                        <a href="#" id="profile"><img src="images/profile.png" alt="profile" width="50px" height="50px"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="sign-in-section">
+        <a href="/login.html"><h2>Sign In / Register</h2></a>
+    </div>
+
+    <section id="property-details">
+        <div class="container property-info">
+            <div class="property-details">
+                <h2>Cozy Apartment in Downtown</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToYkx4vCo8pSJk3POFq28Il8pD9ANqYjiIsA&s" alt="Cozy Apartment">
+                <p><strong>Price:</strong> ₹1200/month</p>
+                <p><strong>3 BHK Apartment</strong> </p>
+                <p><strong>B block, Downtown, Sector 14</strong></p>
+                <p><strong>Description:</strong> This cozy apartment offers a comfortable living space with modern amenities, situated in the heart of downtown. Enjoy easy access to local shops and restaurants.</p>
+                <p><strong>✅ 24x7 security ✅ children playground</strong></p>
+                <button style="height: 60px; width: 100px; cursor: pointer; border-radius: 10px; background: #333; color: #fff; border: none;">📞 Call now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2>Reviews</h2>
+            <div class="review">
+                <h3>Jane Doe</h3>
+                <p class="reviewer">⭐⭐⭐⭐⭐</p>
+                <p>"Absolutely loved this apartment! The location was perfect and the amenities were top-notch. Would definitely recommend!"</p>
+            </div>
+            <div class="review">
+                <h3>John Smith</h3>
+                <p class="reviewer">⭐⭐⭐⭐</p>
+                <p>"Very nice place, but the noise from the street can be a bit loud at night. Otherwise, a great experience overall."</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>Email: support@rentfinder.com</li>
+                    <li>Phone: +1 234 567 890</li>
+                    <li>Address: 123 Rent St, City, Country</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/privacy.html">Privacy Policy</a></li>
+                    <li><a href="/terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; Roomhaikya. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('profile').addEventListener('click', function(event) {
+            event.preventDefault();
+            const signInSection = document.getElementById('sign-in-section');
+            signInSection.style.display = signInSection.style.display === 'none' || signInSection.style.display === '' ? 'block' : 'none';
+        });
+    </script>
+</body>
+</html>
